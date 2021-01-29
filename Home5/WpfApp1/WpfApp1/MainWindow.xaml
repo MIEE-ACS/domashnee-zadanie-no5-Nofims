@@ -7,17 +7,17 @@
         mc:Ignorable="d"
         Title="УТС-21 Рыбаков Александр 5" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="aconst" HorizontalAlignment="Left" Height="40" Margin="64,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextChanged="ABox_TextChanged_1"/>
-        <TextBox x:Name="cconst" HorizontalAlignment="Left" Height="40" Margin="398,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextChanged="CBox_TextChanged_1"/>
-        <TextBox x:Name="bconst" HorizontalAlignment="Left" Height="40" Margin="227,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextChanged="BBox_TextChanged_1"/>
-        <TextBox x:Name="ans" HorizontalAlignment="Left" Height="122" Margin="10,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="772" TextChanged="Ans_TextChanged"/>
+        <TextBox x:Name="aconst" HorizontalAlignment="Left" Height="40" Margin="64,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextChanged="Aconst_TextChanged_1"/>
+        <TextBox x:Name="cconst" HorizontalAlignment="Left" Height="40" Margin="398,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextChanged="Cconst_TextChanged_1"/>
+        <TextBox x:Name="bconst" HorizontalAlignment="Left" Height="40" Margin="227,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextChanged="Bconst_TextChanged_1"/>
         <Label Content="*x^2+" HorizontalAlignment="Left" Margin="143,163,0,0" VerticalAlignment="Top" Height="40" FontSize="20" Width="65"/>
         <Label Content="*x+" HorizontalAlignment="Left" Margin="320,163,0,0" VerticalAlignment="Top" Width="40
                " Height="40" FontSize="20"/>
         <Label Content="= 0" HorizontalAlignment="Left" Margin="507,163,0,0" VerticalAlignment="Top" Height="40" FontSize="20"/>
-        <Label Content="Решение :" HorizontalAlignment="Left" Margin="21,253,0,0" VerticalAlignment="Top"/>
+        <Label Content="Решение :" HorizontalAlignment="Left" Margin="10,305,0,0" VerticalAlignment="Top"/>
         <Label Content="Квадратное уравнение : " HorizontalAlignment="Left" Margin="37,89,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btn" Content="Решить" HorizontalAlignment="Left" Margin="639,175,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Click_1"/>
+        <TextBox x:Name="ans" HorizontalAlignment="Left" Height="69" Margin="0,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="782" TextChanged="Ans_TextChanged"/>
 
     </Grid>
 </Window>

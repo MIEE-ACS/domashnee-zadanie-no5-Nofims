@@ -139,7 +139,7 @@ namespace WpfApp1
             catch { MessageBox.Show("Допустимы только целые числа!"); bconst.Text = ""; }
         }
 
-        private void CBox_TextChanged_1(object sender, TextChangedEventArgs e) // Ввод 3й константы
+        private void Cconst_TextChanged_1(object sender, TextChangedEventArgs e) // Ввод 3й константы
         {
             try
             {
@@ -151,8 +151,9 @@ namespace WpfApp1
             catch { MessageBox.Show("Допустимы только целые числа!"); cconst.Text = ""; }
         }
 
-        
+        private void Ans_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
-       
+        }
     }
 }
