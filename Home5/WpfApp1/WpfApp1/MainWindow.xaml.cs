@@ -90,47 +90,12 @@ namespace WpfApp1
         }
 
         QuadEq Eq = new QuadEq(0, 0, 0);//создаём экземпляр класса, занулив все значения
-        private void aBox_TextChanged(object sender, TextChangedEventArgs e) //запись а
-        {
-            try
-            {
-                if (aBox.Text != " ")
-                {
-                    Eq.A = int.Parse(aBox.Text);
-                }
-            }
-            catch { MessageBox.Show("Допустимы только целые числа!"); aBox.Text = ""; }
-        }
 
-        private void bBox_TextChanged(object sender, TextChangedEventArgs e) //запись b
+        private void Btn_Click_1(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                if (bBox.Text != " ")
-                {
-                    Eq.B = int.Parse(bBox.Text);
-                }
-            }
-            catch { MessageBox.Show("Допустимы только целые числа!"); bBox.Text = ""; }
-        }
 
-        private void cBox_TextChanged(object sender, TextChangedEventArgs e) //запись c
-        {
-            try
-            {
-                if (cBox.Text != " ")
-                {
-                    Eq.C = int.Parse(cBox.Text);
-                }
-            }
-            catch { MessageBox.Show("Допустимы только целые числа!"); cBox.Text = ""; }
-        }
 
-        private void btn_Click(object sender, RoutedEventArgs e)
-        {
-            //double j = -1.0 / 0.0 ;
-
-            if ((aBox.Text == " ") || (bBox.Text == " ") || (cBox.Text == " ")) //проверка чтобы все числа были введены
+            if ((aconst.Text == " ") || (bconst.Text == " ") || (cconst.Text == " ")) //проверка чтобы все числа были введены(при вводе отрицательного числа сначала нужно ввести число , а после перед ним минус)
             {
                 MessageBox.Show("Введите достаточное количество данных!");
             }
@@ -149,5 +114,45 @@ namespace WpfApp1
                 else { ans.Text = QuadEq.ToString(Eq) + "\nкорня два (т. к. D > 0):" + $" {QuadEq.X1Find(Eq):0.00000} и {QuadEq.X2Find(Eq):0.00000}"; }
             }
         }
+
+        private void Aconst_TextChanged_1(object sender, TextChangedEventArgs e)// Ввод 1й константы
+        {
+            try
+            {
+                if (aconst.Text != " ")
+                {
+                    Eq.A = int.Parse(aconst.Text);
+                }
+            }
+            catch { MessageBox.Show("Допустимы только целые числа!"); aconst.Text = ""; }
+        }
+
+        private void Bconst_TextChanged_1(object sender, TextChangedEventArgs e)// Ввод 2й константы
+        {
+            try
+            {
+                if (bconst.Text != " ")
+                {
+                    Eq.B = int.Parse(bconst.Text);
+                }
+            }
+            catch { MessageBox.Show("Допустимы только целые числа!"); bconst.Text = ""; }
+        }
+
+        private void CBox_TextChanged_1(object sender, TextChangedEventArgs e) // Ввод 3й константы
+        {
+            try
+            {
+                if (cconst.Text != " ")
+                {
+                    Eq.C = int.Parse(cconst.Text);
+                }
+            }
+            catch { MessageBox.Show("Допустимы только целые числа!"); cconst.Text = ""; }
+        }
+
+        
+
+       
     }
 }
