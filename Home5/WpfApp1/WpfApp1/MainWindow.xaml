@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="УТС-21 Рыбаков Александр 5" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="aconst" HorizontalAlignment="Left" Height="40" Margin="64,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextChanged="Aconst_TextChanged_1"/>
+        <TextBox x:Name="cconst" HorizontalAlignment="Left" Height="40" Margin="398,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextChanged="Cconst_TextChanged_1"/>
+        <TextBox x:Name="bconst" HorizontalAlignment="Left" Height="40" Margin="227,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextChanged="Bconst_TextChanged_1"/>
+        <Label Content="*x^2+" HorizontalAlignment="Left" Margin="143,163,0,0" VerticalAlignment="Top" Height="40" FontSize="20" Width="65"/>
+        <Label Content="*x+" HorizontalAlignment="Left" Margin="320,163,0,0" VerticalAlignment="Top" Width="40
+               " Height="40" FontSize="20"/>
+        <Label Content="= 0" HorizontalAlignment="Left" Margin="507,163,0,0" VerticalAlignment="Top" Height="40" FontSize="20"/>
+        <Label Content="Решение :" HorizontalAlignment="Left" Margin="10,305,0,0" VerticalAlignment="Top"/>
+        <Label Content="Квадратное уравнение : " HorizontalAlignment="Left" Margin="37,89,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn" Content="Решить" HorizontalAlignment="Left" Margin="639,175,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Click_1"/>
+        <TextBox x:Name="ans" HorizontalAlignment="Left" Height="69" Margin="0,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="782" TextChanged="Ans_TextChanged"/>
+
+    </Grid>
+</Window>
